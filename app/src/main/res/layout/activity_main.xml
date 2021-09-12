@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.registration.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:ignore="MissingConstraints">
+
+   <EditText
+       android:id="@+id/et_phone_number"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/phone_number"
+       android:textColor="@color/textColor"
+       android:layout_margin="20dp"
+       tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_otp"
+        android:clickable="false"
+        android:textColor="@color/textColor"
+        android:layout_margin="20dp"
+        tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_generate_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/generate_otp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textColor"
+            android:layout_margin="20dp"/>
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/verify_sign_in"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textColor"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
